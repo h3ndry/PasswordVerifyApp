@@ -3,9 +3,10 @@
 
 PasswordVerifyApp::PasswordVerifyApp(QWidget *parent) :
     QMainWindow(parent),
-    ui(new Ui::PasswordVerifyApp)
-{
+    ui(new Ui::PasswordVerifyApp){
     ui->setupUi(this);
+    //ui->contBtn->hide();
+    //ui->dontMacth->hide();
 }
 
 PasswordVerifyApp::~PasswordVerifyApp()
