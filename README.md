@@ -6,5 +6,5 @@ the stardand of the internet these days. While a user type a password the applic
 orrect about the password untill it meet the corret stardand. When The password meets the stardand a continue 
 button will appear.
 
-![GitHub Logo](/screenshots/screenshot.png)
-Format: ![Alt Text](url)
+![GitHub Logo](https://raw.githubusercontent.com/simangaH/PasswordVerifyApp/master/Screenshot/screenshot.png) /n
+Format: ![ScreenShot](url)
