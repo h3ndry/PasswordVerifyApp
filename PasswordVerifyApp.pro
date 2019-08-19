@@ -26,10 +26,12 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        passwordverifyapp.cpp
+        passwordverifyapp.cpp \
+        verify.cpp
 
 HEADERS += \
-        passwordverifyapp.h
+        passwordverifyapp.h \
+        verify.h
 
 FORMS += \
         passwordverifyapp.ui

@@ -15,6 +15,9 @@ public:
     explicit PasswordVerifyApp(QWidget *parent = nullptr);
     ~PasswordVerifyApp();
 
+private slots:
+    void on_PasswordLineEdit_textChanged(const QString &arg1);
+
 private:
     Ui::PasswordVerifyApp *ui;
 };
