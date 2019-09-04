@@ -1,6 +1,6 @@
 #include "passwordverifyapp.h"
 #include "ui_passwordverifyapp.h"
-#include "verify.h"
+//#include "verify.h"
 
 PasswordVerifyApp::PasswordVerifyApp(QWidget *parent) :
     QMainWindow(parent),
@@ -10,7 +10,6 @@ PasswordVerifyApp::PasswordVerifyApp(QWidget *parent) :
     ui->matchLabel->hide();
     ui->continueBtn->hide();
 
-    Verify verifyPasswor;
 
 }
 
@@ -20,10 +19,15 @@ PasswordVerifyApp::~PasswordVerifyApp()
 }
 
 void PasswordVerifyApp::on_PasswordLineEdit_textChanged(const QString &arg1){
-    if (arg1.length() >= 8) {
-        if (!ui->condition1->isChecked()){
-            ui->condition1->click();
-            ui->condition1->setStyleSheet("color: green");
-        }
+    // isLong(arg1) ? mark() :
+}
+
+void PasswordVerifyApp::mark(const QCheckBox &condition){
+    if (!condition.isChecked()) {
+        ui->condition1->click();
+        ui->condition1->setStyleSheet("color: green");
     }
 }
+
+
+
